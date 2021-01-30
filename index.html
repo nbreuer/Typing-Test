@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title" class="title"></h1>
+    <div class="container">
+        <div id="sample-text" class="sample-text">
+            Click on the area below to start the test
+        </div>
+        <textarea id="my-text" class="my-text" contenteditable="true" type="text" placeholder="Start typing here"></textarea> 
+        <div class="right-pane">
+            <b class="instructions"><span class="start">Start </span>typing sample text to begin test</b>
+            <div id="timer" class="timer"><p><span id="minutes">0</span>:<span id="seconds">00</span>:<span id="tens">00</span></p>
+            <div id="nwt"class="nwt">
+                <p>Number of words typed: <span id="nwtTotal"></span></p>
+            </div>
+            <div id="wpm" class="wpm">
+                <p>WPM: <span id="wpmTotal"></span></p>
+            </div>
+            <button id="reset-button" class="reset-button">
+                <p>Try Again</p>
+            </button>
+        </div>
+    </div>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
